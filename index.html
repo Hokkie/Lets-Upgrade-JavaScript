@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <h2>This is assignment day 2 for Javascript Batch 1 </h2>
+    </head>
+    <body>
+        <h3>This is live date script</h3>
+        <script>
+            document.write(Date());
+        </script>
+        
+        <h3>This is print window JS</h3>
+        <button onclick="window.print()">Print</button>
+        
+        <h3>This is Javascript program to get the current date, with expected output : mm-dd-yyyy, mm/dd/yyyy, or dd-mm-yyyy, dd/mm/yy</h3>
+        <button type="button" onclick="document.getElementById('test').innerHTML = today">Click me</button>
+        <script id="test">
+            let today = new Date();
+            let dd = today.getDate();
+
+            let mm = today.getMonth()+1;
+            const yyyy = today.getFullYear();
+            if(dd<10) {
+                dd=`0${dd}`;
+            }
+
+            if(mm<10) {
+                mm=`0${mm}`;
+            }
+            today = `${mm} - ${dd} - ${yyyy}`;
+            console.log(today);
+            today = `${mm} / ${dd} / ${yyyy}`;
+            console.log(today);
+            today = `${dd} - ${mm} - ${yyyy}`;
+            console.log(today);
+            today = `${dd} / ${mm} / ${yyyy}`;
+            console.log(today);  
+        </script>
+
+    </body>
+</html>
