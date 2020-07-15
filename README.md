@@ -1,2 +1,3 @@
-# Lets-Upgrade-JavaScript-Day-02
-This is assignment for day 2 JavaScript batch 1 (Lets Upgrade)
+# Lets-Upgrade-JavaScript
+This is assignment for JavaScript training batch 1 (Lets Upgrade program)
+letsupgrade.in
