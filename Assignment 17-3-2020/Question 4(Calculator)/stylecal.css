@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    /*item pendukung*/
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.flex-container-row {
+    display: flex;
+}
+
+.button {
+    flex-basis: 25%;
+
+    /*item pendukung*/
+    font-size: 1.5em;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid black;
+    background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+    cursor: pointer;
+}
+
+.double {
+    flex-basis: 50%;
+}
+
+/* sekarang mempercantik tampilan dengan menambahkan border dsb terserah tidak ikut materi its okay */
+/* dari awal layout "NOL" */
+.display {
+    color: darkred;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: darksalmon;
+    border: 1px solid black;
+    font-size: 2em;
+}
+
+/* sekarang bagian plus minum sama dengan yang diwarnai */
+.negative,
+.operator,
+.double {
+    background: forestgreen;
+}
+
+/* skrg menambahkan efek bayangan */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+/* menambahakn efek ketika disentuh angkanya bewarna */
+.button:hover {
+    font-weight: bolder;
+}
+
+/*awal nya tampilan tombol berantakan kemudian di rapikan dengan kode berikut*/
+@media screen and (max-width:513px) {
+    .button {
+        padding: 10px;
+    }
+}
